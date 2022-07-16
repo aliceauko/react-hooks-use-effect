@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 function DogPics() {
   const [images, setImages] = useState([]);
 
-  uuseEffect(() => {
+  useEffect(() => {
     fetch("https://dog.ceo/api/breeds/image/random/3")
       .then((r) => r.json())
       .then((data) => {
